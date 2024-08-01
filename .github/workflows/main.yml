@@ -2,9 +2,9 @@ name: Java CI with Maven
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
 
 jobs:
   build:
@@ -50,4 +50,3 @@ jobs:
         -H "Authorization: Bearer $RENDER_API_KEY" \
         -H "Content-Type: application/json" \
         -d '{"clearCache": false}'
-
